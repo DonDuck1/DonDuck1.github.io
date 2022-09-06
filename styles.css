@@ -1,5 +1,6 @@
 .links:active, .links:hover, .links:link, .links:visited {
     color: blue;
+    display: block;
 }
 
 nav {
