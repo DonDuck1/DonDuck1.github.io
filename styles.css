@@ -67,6 +67,49 @@
     display: block;
 }
 
+.popup {
+    margin: 0;
+    height: 75%;
+    width: 2%;
+    right: 0;
+    top: 12.5%;
+    text-decoration: none;
+    background-color: #333;
+    position: fixed;
+}
+.popup:hover .popup {
+    height: 0%;
+}
+.popup:hover .nav_bar_3 {
+    height: 75%;
+}
+.popup:hover .nav_bar_3 a {
+    display: block;
+}
+
+.nav_bar_3 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #333;
+    height: 0%;
+    position: fixed;
+    overflow: auto;
+    top: 12.5%;
+    right: 0;
+}
+.nav_bar_3 a {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.nav_bar_3 a:hover {
+    background-color: #111;
+}
+
 #active {
     background-color: #04AA6D;
 }
