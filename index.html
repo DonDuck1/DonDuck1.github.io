@@ -8,12 +8,22 @@
     <link href="styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <h1>My Website Landing Page</h1>
     <nav>
-      <a class="links" href="./profile.html">profile.html</a>
-      <a class="links" href="./faq.html">faq.html</a>
-      <a class="links" href="./dashboard.html">dashboard.html</a>
-      <a class="links" href="./blog.html">blog.html</a>
+      <ul class="nav_bar_1">
+        <li class="nav_bar_2" id="active"><a href="./index.html">Home</a></li>
+        <li class="nav_bar_2"><a href="./profile.html">Profile</a></li>
+        <li class="nav_bar_2"><a href="./faq.html">FAQ</a></li>
+        <li class="nav_bar_2"><a href="./dashboard.html">Dashboard</a></li>
+        <li class="dropdown">
+          <a href="./blog.html" class="dropbtn">Blog</a>
+          <div class="dropdown-content">
+            <a href="#">Blog 1</a>
+            <a href="#">Blog 2</a>
+            <a href="#">Blog 3</a>
+          </div>
+        </li>
+      </ul>
+      <h1 class="big_title">Home</h1>
     </nav>
   </body>
 </html>
