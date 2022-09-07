@@ -14,6 +14,55 @@
     color: white;
     display: block;
 }
+.smalltitleblog {
+    text-align: left;
+    display: block;
+    margin-left: 6px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 38px;
+}
+.smallsummaryblog {
+    margin-left: 6px;
+    margin-right: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.totalblogdiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 300px;
+    border: 3px solid black;
+}
+.titleandsummarydivblog{
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+.titledivblog {
+    width: 100%;
+    height: 15%;
+    border: 1px solid black;
+}
+.summarydivblog {
+    width: 100%;
+    height: 85%;
+    border: 1px solid black;
+}
+.imagedivblog {
+    display: inline-block;
+    float: right;
+    width: 60%;
+    height: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+}
 
 .personalinfotitle {
     margin-left: auto;
@@ -22,14 +71,14 @@
     margin-bottom: 0;
     width: 100%;
     background-color: black;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 .personalinfo {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: white;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 .profilephoto {
     display: inline;
