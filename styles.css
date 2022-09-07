@@ -7,14 +7,42 @@
     text-align: center;
     display: block;
 }
+.smalltitleprofile {
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: white;
+    display: block;
+}
 
+.personalinfotitle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+}
+.personalinfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
 .profilephoto {
     display: inline;
+    margin-top: 4px;
     margin-left: 2%;
 }
 .arnemuiden {
     display: inline;
-    margin-left: 2%;
+    margin-left: 9%;
+}
+.svpo {
+    display: inline;
+    margin-left: 9%;
 }
 .divisiveline {
     color: white;
