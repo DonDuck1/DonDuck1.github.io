@@ -24,10 +24,38 @@
     font-size: 38px;
 }
 .smallsummaryblog {
+    display: inline;
     margin-left: 6px;
-    margin-right: 0;
+    margin-right: 0px;
     margin-top: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}
+.readmoretext {
+    display: inline;
+    color: blue;
+    margin-left: 6px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.questiondiv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: 2px solid black;
+    width: 50%;
+}
+.question {
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.answer {
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;  
 }
 
 .totalblogdiv {
@@ -38,7 +66,7 @@
     border: 3px solid black;
 }
 .titleandsummarydivblog{
-    display: inline-block;
+    /*display: inline-block;*/
     float: left;
     width: 40%;
     height: 100%;
@@ -54,7 +82,7 @@
     border: 1px solid black;
 }
 .imagedivblog {
-    display: inline-block;
+    /*display: inline-block;*/
     float: right;
     width: 60%;
     height: 100%;
@@ -69,14 +97,14 @@
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    width: 100%;
+    width: 90%;
     background-color: black;
     border: 3px solid black;
 }
 .personalinfo {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     background-color: white;
     border: 3px solid black;
 }
