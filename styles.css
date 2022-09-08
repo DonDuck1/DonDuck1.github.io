@@ -39,6 +39,84 @@
     margin-bottom: 0px;
 }
 
+.dashboardtabletop {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-spacing: 0px;
+}
+.dashboardtablebottom {
+    width: 90%;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-spacing: 0px;
+}
+.dashboardtablebigtitleblock {
+    padding: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0px solid black;
+    border-right: 2px solid black;
+    width: 25%;
+}
+.dashboardtablemostleftbigtitleblock {
+    padding: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 25%;
+}
+.dashboardtablelittletitleblock {
+    padding: 0;
+    border-top: 0px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0px solid black;
+    border-right: 2px solid black;
+    width: 25%;
+}
+.dashboardtablemostleftlittletitleblock {
+    padding: 0;
+    border-top: 0px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 8.33%;
+}
+.dashboardtablequartile1littletitleblock {
+    padding: 0;
+    border-top: 0px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0px solid black;
+    border-right: 2px solid black;
+    width: 8.33%;
+}
+.dashboardtableblock {
+    padding: 0;
+    border-top: 0px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0px solid black;
+    border-right: 2px solid black;
+    width: 25%;
+}
+.dashboardtablemostleftblock {
+    padding: 0;
+    border-top: 0px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 8.33%;
+}
+.dashboardtablequartile1block {
+    padding: 0;
+    border-top: 0px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0px solid black;
+    border-right: 2px solid black;
+    width: 8.33%;
+}
+
 .questiondiv {
     margin-left: auto;
     margin-right: auto;
