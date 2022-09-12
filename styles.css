@@ -46,14 +46,7 @@
     margin-bottom: 0px;
 }
 
-.dashboardflextable {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-}
+
 
 .dashboardtable {
     width: 90%;
