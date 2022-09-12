@@ -23,6 +23,14 @@
     opacity: 0.0;
 }
 
+.homeimage {
+    position: absolute;
+    top: 6%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .smalltitleprofile {
     text-align: center;
     margin-top: 4px;
@@ -276,6 +284,38 @@
 }
 .blogpostparagraph {
     text-align: center;
+    margin-bottom: 4px;
+}
+.blogimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blogreview {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    margin-bottom: 4px;
+}
+.blogplus {
+    display: block;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+}
+.blogminus {
+    display: block;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+}
+.plusminustext {
+    margin: 0;
+    padding-left: 24px;
+    display: inline;
+    padding-bottom: auto;
+    padding-top: auto;
 }
 
 .personalinfotitle {
