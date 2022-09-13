@@ -286,6 +286,13 @@
     /*border-left: 1px solid black;*/
     border-right: 0px;
 }
+.bloghome1imgsubdiv {
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .bloghomeimgsubdiv {
     height: 100%;
     min-width: 32%;
@@ -516,7 +523,7 @@
     height: 12%;
     bottom: 12%;
     right: 5%;
-    animation: arrow 1s linear infinite, fade-out 3s linear 3s 1 forwards;
+    animation: arrow 1s linear 10, fade-out 3s linear 3s 1 forwards;
 }
 .asidemenutext {
     position: fixed;
