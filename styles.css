@@ -9,7 +9,6 @@
     display: block;
 }
 
-
 .normallink {
     color: blue;
 }
@@ -44,11 +43,30 @@
     margin-top: 6px;
     margin-bottom: 6px;
 }
+.secondarysmalltitlehome {
+    text-align: center;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
 .paragraphhome {
     margin-top: 0;
     margin-bottom: 6px;
     margin-left: 6px;
     margin-right: 0;
+}
+.paragraphlisthome {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 16px;
+    margin-bottom: 0;
+    margin-left: 6px;
+    margin-right: 0;
+}
+.listhome {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 6px;
 }
 
 .smalltitleprofile {
