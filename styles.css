@@ -651,6 +651,9 @@
     right: 0;
     background-color: #adc0dd;
 }
+.animationfixdivnodisplay {
+    display: none;
+}
 .animationfix {
     display: block;
     /*position: fixed;*/
@@ -661,6 +664,7 @@
 }
 .animationfixnodisplay {
     display: none;
+
 }
 @keyframes animationfix {
     0% {
