@@ -681,7 +681,7 @@
     position: fixed;
     transform: rotate(-30deg);
     width: 8%;
-    height: 12%;
+    height: 16%;
     bottom: 12%;
     right: 5%;
     animation: arrow 1s linear 10, fade-out 3s linear 3s 1 forwards;
@@ -689,9 +689,10 @@
 .asidemenutextdiv {
     position: fixed;
     background-color: #adc0dd;
-    bottom: 3%;
+    bottom: 5%;
     right: 5%;
     max-width: 15%;
+    max-height: 11%;
     z-index: -2;
 }
 .asidemenutext {
