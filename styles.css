@@ -686,10 +686,15 @@
     right: 5%;
     animation: arrow 1s linear 10, fade-out 3s linear 3s 1 forwards;
 }
-.asidemenutext {
+.asidemenutextdiv {
     position: fixed;
+    background-color: #adc0dd;
     bottom: 3%;
     right: 5%;
+    max-width: 15%;
+    z-index: -2;
+}
+.asidemenutext {
     animation: fade-out 3s linear 3s 1 forwards;
 }
 .popup:hover .asidemenuarrow {
