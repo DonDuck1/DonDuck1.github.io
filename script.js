@@ -3,8 +3,8 @@ setTimeout( function() { imgremoval2(); }, 250);
 function imgremoval1() {
     var imgremove1 = document.getElementById("animationfixjs");
     imgremove1.classList.remove("animationfix");
-  } 
-  function imgremoval2() {
+} 
+function imgremoval2() {
     var imgremove2 = document.getElementById("animationfixjs");
     imgremove2.classList.add("animationfixnodisplay");
 }
