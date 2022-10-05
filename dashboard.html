@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link href="styles.css" rel="stylesheet"/>
     <script src="script.js"></script>
+    <script src="dashboardscript.js"></script>
   </head>
   <body>
     <nav>
@@ -151,21 +152,10 @@
 
     <h2 class="smalltitlelessmargin">NSBA progress bar:</h2>
     <p class="NBSAParagraph">Green shows the amount of EC received. The Red line is 45 EC (threshold of NBSA).</p>
-    <table class="NBSABar">
-      <tr>
-        <td class="NBSABarLeftFill"></td>
-        <td class="NBSABarLeftEmpty"></td>
-        <td class="NBSABarLeftRightDivider"></td>
-        <td class="NBSABarRightFill"></td>
-        <td class="NBSABarRightEmpty"></td>
-      </tr>
-    </table>
-    <p class="NBSAParagraph">Current exact progress: 0.0/60.0</p>
-    <!--<div class="NBSABar">
-      <div class="NBSABarLeftFill"></div>
-      <div class="NBSABarLeftEmpty"></div>
-      <div class="NBSABarRightFill"></div>
-      <div class="NBSABarRightEmpty"></div>
-    </div>-->
+    <div class="NBSABar">
+      <div class="NBSABarFill" id="NBSABarFill"></div>
+      <div class="NBSABarLeftRightDivider"></div>
+    </div>
+    <p class="NBSAParagraph" id="NBSAText">Current exact progress: 0/60</p>
   </body>
 </html>
