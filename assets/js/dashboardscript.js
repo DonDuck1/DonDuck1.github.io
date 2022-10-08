@@ -1,5 +1,5 @@
 window.onload = function() {
-  const ECCount = 59;
+  const ECCount = 0;
   document.getElementById("NBSAText").innerHTML = `Current exact progress: ${ECCount} / 60`;
   const ECPercentage = (ECCount / 60) * 100;
   if (ECPercentage > 0) {
@@ -14,6 +14,11 @@ window.onload = function() {
         document.getElementById('NBSABarFill').style.width = `${NBSAFillWidth}%`;
       }, 40 * NBSAFillWidth);
     }
-//    document.getElementById('NBSABarFill').style.width = `${ECPercentage}%`;
+    if (NBSAFillWidth == 100) {
+      setTimeout(function () {
+        document.getElementById('NBSABarFill').style.borderTopRightRadius = `20px`;
+        document.getElementById('NBSABarFill').style.borderBottomRightRadius = `20px`;
+      }, 4000);
+    }
   }
 };

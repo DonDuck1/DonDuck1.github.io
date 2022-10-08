@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
-    <link href="styles.css" rel="stylesheet"/>
-    <script src="script.js"></script>
-    <script src="dashboardscript.js"></script>
+    <link href="./assets/css/styles.css" rel="stylesheet"/>
+    
   </head>
   <body>
     <nav>
@@ -139,15 +138,16 @@
         <td class="dashboardtablemostrightmostbottomblock">N/A</td>
       </tr>
     </table>
-    <table class="dashboardECYellow"></table>
-    <p class="dashboardECparagraph">= Not yet completed</p>
-    <hr class="divider">
-    <table class="dashboardECGreen"></table>
-    <p class="dashboardECparagraph">= Received</p>
-    <hr class="divider">
-    <table class="dashboardECRed"></table>
-    <p class="dashboardECparagraph">= Has to be retaken</p>
-
+    <div class="dashboardColourLegend">
+      <table class="dashboardECYellow"></table>
+      <p class="dashboardECYellowparagraph">= Not yet completed</p>
+      <hr class="divider">
+      <table class="dashboardECGreen"></table>
+      <p class="dashboardECGreenparagraph">= Received</p>
+      <hr class="divider">
+      <table class="dashboardECRed"></table>
+      <p class="dashboardECRedparagraph">= Has to be retaken</p>
+    </div>
     <hr class="divider">
 
     <h2 class="smalltitlelessmargin">NSBA progress bar:</h2>
@@ -157,5 +157,8 @@
       <div class="NBSABarLeftRightDivider"></div>
     </div>
     <p class="NBSAParagraph" id="NBSAText">Current exact progress: 0/60</p>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/dashboardscript.js"></script>
+    <script src="./assets/js/confetti.js"></script>
   </body>
 </html>

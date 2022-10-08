@@ -218,15 +218,19 @@
     padding: 0;
     border-top: 0px solid black;
     border-bottom: 2px solid black;
-    border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom-right-radius: 20px;
     width: 20%;
 }
+.dashboardColourLegend {
+    width: 60%;
+    background-color: #adc0dd;
+    margin-left: auto;
+    margin-right: auto;
+}
 .dashboardECYellow {
     display: inline-block;
     margin-top: 10px;
-    margin-left: 20%;
     height: 30px;
     width: 30px;
     background-color: #fff390;
@@ -234,7 +238,6 @@
 }
 .dashboardECGreen {
     display: inline-block;
-    margin-left: 20%;
     height: 30px;
     width: 30px;
     background-color: #9de39f;
@@ -242,15 +245,28 @@
 }
 .dashboardECRed {
     display: inline-block;
-    margin-left: 20%;
     height: 30px;
     width: 30px;
     background-color: #ff4d4d;
     border: 2px solid black;
 }
-.dashboardECparagraph {
+.dashboardECYellowparagraph {
     margin: 0;
-    display: inline;
+    position: relative;
+    left: 34px;
+    top: -28px;
+}
+.dashboardECGreenparagraph {
+    margin: 0;
+    position: relative;
+    left: 34px;
+    top: -28px;
+}
+.dashboardECRedparagraph {
+    margin: 0;
+    position: relative;
+    left: 34px;
+    top: -28px;
 }
 
 .smalltitlelessmargin {
@@ -286,9 +302,7 @@
     height: 30px;
     background-color: green;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 .NBSABarEmpty {
     float: left;
@@ -300,8 +314,8 @@
     border-bottom-right-radius: 20px;
 }
 .NBSABarLeftRightDivider {
-    position: absolute;
-    left: 64.9%;
+    position: relative;
+    left: 75%;
     z-index: 9999;
     width: 2px;
     height: 30px;
