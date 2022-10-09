@@ -9,25 +9,25 @@
     <script src="./assets/js/script.js"></script>
   </head>
   <body>
-    <nav>
+    <nav id="navigationbars">
       <ul class="nav_bar_1">
         <li class="nav_bar_2" id="active"><a href="./index.html">Home</a></li>
         <li class="nav_bar_2"><a href="./profile.html">Profile</a></li>
         <li class="nav_bar_2"><a href="./faq.html">FAQ</a></li>
         <li class="nav_bar_2"><a href="./dashboard.html">Dashboard</a></li>
-        <li class="dropdown">
-          <a href="./blog.html" class="dropbtn">Blogs</a>
-          <div class="dropdown-content">
-            <a href="./blog5.html">First feedback</a>
-            <a href="./blog4.html">Programming experience</a>
-            <a href="./blog3.html">Personal SWOT analysis</a>
-            <a href="./blog2.html">Study Choice</a>
-            <a href="./blog1.html">Profession</a>
+        <li class="dropdown" id="dropdown">
+          <a href="./blog.html" class="dropbtn" id="dropdownbutton" onmouseover="fadeIn()" onmouseout="fadeOut()">Blogs</a>
+          <div class="dropdown-content" id="dropdown-content" onmouseout="fadeOut()">
+            <a href="./blog5.html" id="blog5link">First feedback</a>
+            <a href="./blog4.html" id="blog4link">Programming experience</a>
+            <a href="./blog3.html" id="blog3link">Personal SWOT analysis</a>
+            <a href="./blog2.html" id="blog2link">Study Choice</a>
+            <a href="./blog1.html" id="blog1link">Profession</a>
           </div>
         </li>
       </ul>
-      <div class="popup">
-        <ul class="nav_bar_3">
+      <div class="popup" id="popup">
+        <ul class="nav_bar_3" id="nav_bar_3">
           <li><a  href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" 
                   target="_blank">The HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
           <li><a  href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" 
@@ -41,7 +41,8 @@
           <li><a  href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub of study program</a></li>
         </ul>
       </div>
-      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" alt="A tried and failed animation fix (if you read this)"></div>
+      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" 
+        alt="A tried and failed animation fix (if you are reading this)"></div>
       <img class="asidemenuarrow" src="./images/asidemenuarrowtransparentbackground.png" alt="arrow">
       <div class="asidemenutextdiv"><p class="asidemenutext">This is the aside menu, hover over it! :)<p></div>
     </nav>
@@ -55,6 +56,8 @@
           navigation bar at the top and an aside menu with useful links on the right (where the arrow was pointing). On this page, I'll try to convince you that the study "HBO-ICT" 
           is a good pick for me.
         </p>
+      </article>
+      <article class="homediv">
         <h2 class="secondarysmalltitlehome">My motivation</h2>
         <div class="homeimgdiv">
           <img class="motivationhomeimg" src="./images/motivation.png" alt="Motivation loading...">
@@ -69,6 +72,8 @@
           of myself for creating something others enjoyed. So really, my motivation for the study HBO-ICT is that I'd like to learn how to program to be able to actually create the 
           things I think of that would be helpful and/or fun (to others) and make me proud of myself.
         </p>
+      </article>
+      <article class="homediv">
         <h2 class="secondarysmalltitlehome">Proof that ICT is the study for me</h2>
         <div class="homeimgdiv">
           <img class="proofhomeimg" src="./images/proof.png" alt="Proof under a loupe">
@@ -81,18 +86,53 @@
           study. I do have to say that the game I've modded was created with the idea that modding should be easy, so while I might know how to do things in that "environment", I 
           don't know whether all of the skills I've learnt from modding will transfer over to actual programming.
         </p>
+      </article>
+      <article class="homediv">
+        <h2 class="secondarysmalltitlehome">Summary</h2>
         <p class="paragraphlisthome">So, to summarize:</p>
         <ul class="listhome">
           <li>My motivation for learning how to program is being able to create original things that I've thought of that would be helpful and/or fun (to others and me), which would
               make me proud of myself.
           </li>
-          <li>Maths and physics (which I liked and did best in of all subjects) learnt me to think outside the box ("abstract thinking") and increased my problem-solving capability.</li>
-          <li>My prior programming experience (modding games) will help me for at least the first quartile of my study, though not everything I've learnt might transfer over to "real"
-              programming.
+          <li>Maths and physics (which I liked and did best in of all subjects) learnt me to think outside the box ("abstract thinking") and increased my problem-solving capability.
+          </li>
+          <li>My prior programming experience (modding games) will help me for at least the first quartile of my study, though not everything I've learnt might transfer over to 
+            "real" programming.
           </li>
         </ul>
       </article>
     </main>
-    <p id="test">test</p>
+    <script>
+      window.onload = function() {
+        dropdownContent.style.display = "none";
+      }
+
+      const dropdown = document.getElementById("dropdown");
+      const dropdownbutton = document.getElementById("dropdownbutton");
+	    const dropdownContent = document.getElementById("dropdown-content");
+      const blog5Link = document.getElementById("blog5link");
+      const blog4Link = document.getElementById("blog4link");
+      const blog3Link = document.getElementById("blog3link");
+      const blog2Link = document.getElementById("blog2link");
+      const blog1Link = document.getElementById("blog1link");
+
+      function fadeIn() {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "topfade-in 250ms linear 1 forwards";
+      }
+      function fadeOut() {
+        if (
+        window.getComputedStyle(blog5link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog4link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog3link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog2link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog1link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(dropdown).backgroundColor == "rgb(17, 17, 17)") {
+        } else {
+          dropdownContent.style.animation = "topfade-out 250ms linear 1 forwards";
+          setTimeout( function() {dropdownContent.style.display = "none";}, 250);
+        }
+      }
+    </script>
   </body>
 </html>

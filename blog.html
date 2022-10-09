@@ -15,33 +15,34 @@
         <li class="nav_bar_2"><a href="./profile.html">Profile</a></li>
         <li class="nav_bar_2"><a href="./faq.html">FAQ</a></li>
         <li class="nav_bar_2"><a href="./dashboard.html">Dashboard</a></li>
-        <li class="dropdown" id="active">
-        <a href="./blog.html" class="dropbtn">Blogs</a>
-        <div class="dropdown-content">
-          <a href="./blog5.html">First feedback</a>
-          <a href="./blog4.html">Programming experience</a>
-          <a href="./blog3.html">Personal SWOT analysis</a>
-          <a href="./blog2.html">Study Choice</a>
-          <a href="./blog1.html">Profession</a>
-        </div>
+        <li class="dropdown" id="dropdown" id="active">
+          <a href="./blog.html" class="dropbtn" id="dropdownbutton" onmouseover="fadeIn()" onmouseout="fadeOut()">Blogs</a>
+          <div class="dropdown-content" id="dropdown-content" onmouseout="fadeOut()">
+            <a href="./blog5.html" id="blog5link">First feedback</a>
+            <a href="./blog4.html" id="blog4link">Programming experience</a>
+            <a href="./blog3.html" id="blog3link">Personal SWOT analysis</a>
+            <a href="./blog2.html" id="blog2link">Study Choice</a>
+            <a href="./blog1.html" id="blog1link">Profession</a>
+          </div>
         </li>
       </ul> 
       <div class="popup">
-          <ul class="nav_bar_3">
-            <li><a  href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" 
-                    target="_blank">The HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
-            <li><a  href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" 
-                    target="_blank">The Implementation Regulations (IR) of the HBO-ICT program (2021-2022)</a></li>
-            <li><a  href="https://learn.hz.nl/" target="_blank">HZ learn</a></li>
-            <li><a  href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" 
-                    target="_blank">Microsoft Teams: "HBO-ICT First Year"</a></li>
-            <li><a  href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" 
-                    target="_blank">Microsoft Teams: "HBO-ICT Algemeen"</a></li>
-            <li><a  href="https://learn.hz.nl/grade/report/overview/index.php" target="_blank">My Study Progress</a></li>
-            <li><a  href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub of study program</a></li>
-          </ul>
+        <ul class="nav_bar_3">
+          <li><a  href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" 
+                  target="_blank">The HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
+          <li><a  href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" 
+                  target="_blank">The Implementation Regulations (IR) of the HBO-ICT program (2021-2022)</a></li>
+          <li><a  href="https://learn.hz.nl/" target="_blank">HZ learn</a></li>
+          <li><a  href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" 
+                  target="_blank">Microsoft Teams: "HBO-ICT First Year"</a></li>
+          <li><a  href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" 
+                  target="_blank">Microsoft Teams: "HBO-ICT Algemeen"</a></li>
+          <li><a  href="https://learn.hz.nl/grade/report/overview/index.php" target="_blank">My Study Progress</a></li>
+          <li><a  href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub of study program</a></li>
+        </ul>
       </div>
-      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" alt="A tried and failed animation fix (if you read this)"></div>
+      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" 
+        alt="A tried and failed animation fix (if you are reading this)"></div>
     </nav>
     <header><h1 class="big_title">Blog</h1></header>
     <main>
@@ -137,8 +138,9 @@
             <h2 class="smalltitleblog">Profession</h2>
           </div>
           <div class="summarydivblog">
-            <p class="smallsummaryblog">In this blog, I talk about three companies that peeked my interest when searching for companies online. I will discuss their core business, the
-              IT roles the companies have, the technologies/ developent environment(s) they might be working with, their work culture and finally my opinion on (some of) these aspects.
+            <p class="smallsummaryblog">In this blog, I talk about three companies that peeked my interest when searching for companies online. I will discuss their core business, 
+              the IT roles the companies have, the technologies/ developent environment(s) they might be working with, their work culture and finally my opinion on (some of) these 
+              aspects.
               <a href="./blog1.html" class="readmoretext">read more...</a>
             </p>
             <p class="publishingdate">Published on 13-09-2022, at 11:36</p>
@@ -157,5 +159,36 @@
         </div>
       </div>
     </main>
+    <script>
+      window.onload = function() {
+        dropdownContent.style.display = "none";
+      }
+      const dropdown = document.getElementById("dropdown");
+      const dropdownbutton = document.getElementById("dropdownbutton");
+	    const dropdownContent = document.getElementById("dropdown-content");
+      const blog5Link = document.getElementById("blog5link");
+      const blog4Link = document.getElementById("blog4link");
+      const blog3Link = document.getElementById("blog3link");
+      const blog2Link = document.getElementById("blog2link");
+      const blog1Link = document.getElementById("blog1link");
+
+      function fadeIn() {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "topfade-in 250ms linear 1 forwards";
+      }
+      function fadeOut() {
+        if (
+        window.getComputedStyle(blog5link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog4link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog3link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog2link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog1link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(dropdown).backgroundColor == "rgb(17, 17, 17)") {
+        } else {
+          dropdownContent.style.animation = "topfade-out 250ms linear 1 forwards";
+          setTimeout( function() {dropdownContent.style.display = "none";}, 250);
+        }
+      }
+    </script>
   </body>
 </html>

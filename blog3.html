@@ -15,15 +15,15 @@
         <li class="nav_bar_2"><a href="./profile.html">Profile</a></li>
         <li class="nav_bar_2"><a href="./faq.html">FAQ</a></li>
         <li class="nav_bar_2"><a href="./dashboard.html">Dashboard</a></li>
-        <li class="dropdown" id="active">
-        <a href="./blog.html" class="dropbtn">Blogs</a>
-        <div class="dropdown-content">
-          <a href="./blog5.html">First feedback</a>
-          <a href="./blog4.html">Programming experience</a>
-          <a href="./blog3.html">Personal SWOT analysis</a>
-          <a href="./blog2.html">Study Choice</a>
-          <a href="./blog1.html">Profession</a>
-        </div>
+        <li class="dropdown" id="dropdown" id="active">
+          <a href="./blog.html" class="dropbtn" id="dropdownbutton" onmouseover="fadeIn()" onmouseout="fadeOut()">Blogs</a>
+          <div class="dropdown-content" id="dropdown-content" onmouseout="fadeOut()">
+            <a href="./blog5.html" id="blog5link">First feedback</a>
+            <a href="./blog4.html" id="blog4link">Programming experience</a>
+            <a href="./blog3.html" id="blog3link">Personal SWOT analysis</a>
+            <a href="./blog2.html" id="blog2link">Study Choice</a>
+            <a href="./blog1.html" id="blog1link">Profession</a>
+          </div>
         </li>
       </ul>
       <div class="popup">
@@ -41,35 +41,69 @@
           <li><a  href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub of study program</a></li>
         </ul>
       </div>
-      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" alt="A tried and failed animation fix (if you read this)"></div>
+      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" 
+        alt="A tried and failed animation fix (if you are reading this)"></div>
     </nav>
-    <header><h1 class="big_title">Personal SWOT analysis</h1></header>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Strengths</h2>
-      <img class="blogimg" src="./images/strength.png" alt="Pixel drawing of strong arm"> <!--credits to project zomboid-->
-      <p class="blogpostparagraph">I am pretty good at subjects that are analytical and have abstract problems, like Maths (variant B, “Wiskunde-B”) and Physics. This can help me with
-         programming because I'll more easily find problems and how to fix them.
-      </p>
-    </article>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Weaknesses</h2>
-      <img class="blogimg" src="./images/weaknesses.png" alt="Pixel drawing of weak arm"> <!--credits to project zomboid-->
-      <p class="blogpostparagraph">I am quite shy, which makes it hard for me to communicate and/or work in a team. I am also inclined to procrastinate (though not the kind of 
-        procrastinating where you have to create an entire website in one evening for example), which is of course not a good thing. Combined with that procrastinating is also a 
-        little bit of perfectionism, which complicates things.
-      </p>
-    </article>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Opportunities</h2>
-      <img class="blogimg" src="./images/opportunities.png" alt="Pixel drawing of being lucky"> <!--credits to project zomboid-->
-      <p class="blogpostparagraph">Gaining experience with working in teams, which will come in handy at an actual IT job. The projects you’ll do for real companies and the internship
-        you’ll follow as part of your study will make you known to companies in the area (networking) and might enable you to find jobs more easily.
-      </p>
-    </article>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Threats</h2>
-      <img class="blogimg" src="./images/risks.png" alt="Pixel drawing of being unlucky"> <!--credits to project zomboid-->
-      <p class="blogpostparagraph">I currently don’t see any threats.</p>
-    </article>
+    <main>
+      <header><h1 class="big_title">Personal SWOT analysis</h1></header>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Strengths</h2>
+        <img class="blogimg" src="./images/strength.png" alt="Pixel drawing of strong arm"> <!--credits to project zomboid-->
+        <p class="blogpostparagraph">I am pretty good at subjects that are analytical and have abstract problems, like Maths (variant B, “Wiskunde-B”) and Physics. This can help me 
+          with programming because I'll more easily find problems and how to fix them.
+        </p>
+      </article>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Weaknesses</h2>
+        <img class="blogimg" src="./images/weaknesses.png" alt="Pixel drawing of weak arm"> <!--credits to project zomboid-->
+        <p class="blogpostparagraph">I am quite shy, which makes it hard for me to communicate and/or work in a team. I am also inclined to procrastinate (though not the kind of 
+          procrastinating where you have to create an entire website in one evening for example), which is of course not a good thing. Combined with that procrastinating is also a 
+          little bit of perfectionism, which complicates things.
+        </p>
+      </article>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Opportunities</h2>
+        <img class="blogimg" src="./images/opportunities.png" alt="Pixel drawing of being lucky"> <!--credits to project zomboid-->
+        <p class="blogpostparagraph">Gaining experience with working in teams, which will come in handy at an actual IT job. The projects you’ll do for real companies and the 
+          internship you’ll follow as part of your study will make you known to companies in the area (networking) and might enable you to find jobs more easily.
+        </p>
+      </article>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Threats</h2>
+        <img class="blogimg" src="./images/risks.png" alt="Pixel drawing of being unlucky"> <!--credits to project zomboid-->
+        <p class="blogpostparagraph">I currently don’t see any threats.</p>
+      </article>
+    </main>
+    <script>
+      window.onload = function() {
+        dropdownContent.style.display = "none";
+      }
+      const dropdown = document.getElementById("dropdown");
+      const dropdownbutton = document.getElementById("dropdownbutton");
+	    const dropdownContent = document.getElementById("dropdown-content");
+      const blog5Link = document.getElementById("blog5link");
+      const blog4Link = document.getElementById("blog4link");
+      const blog3Link = document.getElementById("blog3link");
+      const blog2Link = document.getElementById("blog2link");
+      const blog1Link = document.getElementById("blog1link");
+
+      function fadeIn() {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "topfade-in 250ms linear 1 forwards";
+      }
+      function fadeOut() {
+        if (
+        window.getComputedStyle(blog5link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog4link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog3link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog2link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog1link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(dropdown).backgroundColor == "rgb(17, 17, 17)") {
+        } else {
+          dropdownContent.style.animation = "topfade-out 250ms linear 1 forwards";
+          setTimeout( function() {dropdownContent.style.display = "none";}, 250);
+        }
+      }
+    </script>
   </body>
 </html>

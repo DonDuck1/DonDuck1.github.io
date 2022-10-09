@@ -15,15 +15,15 @@
         <li class="nav_bar_2"><a href="./profile.html">Profile</a></li>
         <li class="nav_bar_2"><a href="./faq.html">FAQ</a></li>
         <li class="nav_bar_2"><a href="./dashboard.html">Dashboard</a></li>
-        <li class="dropdown" id="active">
-        <a href="./blog.html" class="dropbtn">Blogs</a>
-        <div class="dropdown-content">
-          <a href="./blog5.html">First feedback</a>
-          <a href="./blog4.html">Programming experience</a>
-          <a href="./blog3.html">Personal SWOT analysis</a>
-          <a href="./blog2.html">Study Choice</a>
-          <a href="./blog1.html">Profession</a>
-        </div>
+        <li class="dropdown" id="dropdown" id="active">
+          <a href="./blog.html" class="dropbtn" id="dropdownbutton" onmouseover="fadeIn()" onmouseout="fadeOut()">Blogs</a>
+          <div class="dropdown-content" id="dropdown-content" onmouseout="fadeOut()">
+            <a href="./blog5.html" id="blog5link">First feedback</a>
+            <a href="./blog4.html" id="blog4link">Programming experience</a>
+            <a href="./blog3.html" id="blog3link">Personal SWOT analysis</a>
+            <a href="./blog2.html" id="blog2link">Study Choice</a>
+            <a href="./blog1.html" id="blog1link">Profession</a>
+          </div>
         </li>
       </ul>
       <div class="popup">
@@ -41,22 +41,25 @@
           <li><a  href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub of study program</a></li>
         </ul>
       </div>
-      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" alt="A tried and failed animation fix (if you read this)"></div>
+      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" 
+        alt="A tried and failed animation fix (if you are reading this)"></div>
     </nav>
-    <header><h1 class="big_title">Profession</h1></header>
-    <article class="blogpostdiv"> <!--TODO: MAKE THIS NOT INLINE: CLASSES DIDN'T WORK SO THIS IS TEMPORARY (HOPEFULLY) FIXED:CLEAR CACHE: SELECT ALL TABS OF YOUR SITE AND CTRL+F5-->
-      <h2 class="blogpostsmalltitle">E-health Ventures Group</h2>
-      <img class="blogimg" src="./images/ehealth.png" alt="Logo of E-health Ventures Group">
-      <p class="blogpostparagraph">E-health Ventures Group is a company that creates accessible e-health platforms where people can find the right solution to their medicinal 
-        problems through the combination of specialist medical knowledge, products, information, and advice. This makes self-care easier and more accessible, which enables consumers 
-        to come to an appropriate and safe decision to increase their well-being (which is their goal). They divide their roles into 2 categories: Front-End Developer and Back-End 
-        Developer. The Front-End Developer is responsible for the visible parts of their products, the Back-End Developer is responsible for making functionable code and maintaining
-        that code. Products of them (will) include "De Online Dokter", "mensam.eu", "A SkinCare platform" (currently Work In Progress), "A platform about aging in a healthy way" 
-        (still only an idea) and "A platform about fertility" (still only an idea). These projects are (/will be) active in 14 countries. Working on the projects are around 50 
-        employees, spread between 2 offices located in breda and Curaçao. These employees have (according to the company) a lot of freedom, flexible hours and a budget to further 
-        their education. They (apparently) also value the personality of an employee just as much as their knowledge, since they lay a big focus on teamwork: "Our open office culture 
-        is characterised by entrepreneurship and teamwork."
-      </p>
+    <main>
+      <header><h1 class="big_title">Profession</h1></header>
+      <article class="blogpostdiv"> <!--TODO: MAKE THIS NOT INLINE: CLASSES DIDN'T WORK SO THIS IS TEMPORARY (HOPEFULLY) FIXED:CLEAR CACHE: SELECT ALL TABS OF YOUR SITE AND CTRL+F5-->
+        <h2 class="blogpostsmalltitle">E-health Ventures Group</h2>
+        <img class="blogimg" src="./images/ehealth.png" alt="Logo of E-health Ventures Group">
+        <p class="blogpostparagraph">E-health Ventures Group is a company that creates accessible e-health platforms where people can find the right solution to their medicinal 
+          problems through the combination of specialist medical knowledge, products, information, and advice. This makes self-care easier and more accessible, which enables consumers 
+          to come to an appropriate and safe decision to increase their well-being (which is their goal). They divide their roles into 2 categories: Front-End Developer and Back-End 
+          Developer. The Front-End Developer is responsible for the visible parts of their products, the Back-End Developer is responsible for making functionable code and maintaining
+          that code. Products of them (will) include "De Online Dokter", "mensam.eu", "A SkinCare platform" (currently Work In Progress), "A platform about aging in a healthy way" 
+          (still only an idea) and "A platform about fertility" (still only an idea). These projects are (/will be) active in 14 countries. Working on the projects are around 50 
+          employees, spread between 2 offices located in breda and Curaçao. These employees have (according to the company) a lot of freedom, flexible hours and a budget to further 
+          their education. They (apparently) also value the personality of an employee just as much as their knowledge, since they lay a big focus on teamwork: "Our open office culture 
+          is characterised by entrepreneurship and teamwork."
+        </p>
+        <br>
         <div class="blogreview">
           <img class="blogplus" src="./images/plus.png" alt="A Green Plus">
           <p class="plusminustext">Relatively small company with morally good goals.</p>
@@ -69,25 +72,26 @@
           <img class="blogminus" src="./images/minus.png" alt="A Red Minus">
           <p class="plusminustext">Doesn't seem like the most exciting projects to work on.</p>
         </div>
-    </article>
-    <article class="blogpostdiv"> <!--TODO: MAKE THIS NOT INLINE: CLASSES DIDN'T WORK SO THIS IS TEMPORARY (HOPEFULLY) FIXED:CLEAR CACHE: SELECT ALL TABS OF YOUR SITE AND CTRL+F5-->
-      <h2 class="blogpostsmalltitle">Damen Naval (Vlissingen)</h2>
-      <img class="blogimg" src="./images/damennaval.png" alt="Logo of Damen Naval">
-      <p class="blogpostparagraph">Damen Naval primarily produces naval vessels for a lot of different sectors, a few of which are: Offshore Energy, Harbours, Public Transport, 
-        Defence & Security, Fishing, Yachting. They have been the dedicated shipbuilder for the Royal Netherlands Navy for over 50 years. Apart from building ships, they also repair 
-        or dismantle (broken/ old) ships. Aside from the 4 departments that directly have to do with building/ repairing/ demolishing the ships (Production, Project Management, 
-        Repair & Services and "Supply Chain") there are 8 more departments, one of which is IT (& IM). Some of the roles in the IT department are: "Senior Extended Reality (xR) 
-        Developer" (build serious games/ simulations in virtual reality and/ or augmented reality to help train customers), Cyber Security Engineer (F126) (keep their designs secret 
-        on the internet) and IT Project Manager (manages the IT employees working on projects). Other roles are: Manager ICT, Vendor Manager, Operational Purchaser (IT), Master Data 
-        Maintainer, IT Business Partner, Contract Manager (IT), SharePoint Dev (Ops) Engineer, IT Project Support Officer, IT Project Manager, DevOps Engineer ERP / SAP, Chapter Lead 
-        IT Transformation, IT Application Manager RUN. You can see there's quite a lot of roles in the IT department, which means they work with a lot of IT technologies, which 
-        include, but are not limited to: Unity, C#, Python, Blender, API, Virtual Reality, Augmented Reality, 3D Rendering Programs, ERP (IFS, SAP or similar) and/or information 
-        systems such as PIM and MDM, Microsoft 365, the Power Platform, Agile/ Scrum, PMBOK and/or Prince2, Waterfall, SAP Administration or SAP Consulting, ABAP and Fiori, 
-        integration best practices, ADO Fundamentals, MSP, SAFe, ADKAR. Working (with) these roles are some of the 12000 employees of Damen Naval, spread around 37 dockyard across the
-        world. Damen Naval is active (sell ships) in around 101 countries. They describe their work culture as being focused around technology and innovation, but also as quite 
-        dynamiuc, diverse and rewarding. Employees have the opportunity to continue learning and developing their skills while working at the company. Social events centered around
-        business, culture and sports are hosted regularly.
-      </p>
+      </article>
+      <article class="blogpostdiv"> <!--TODO: MAKE THIS NOT INLINE: CLASSES DIDN'T WORK SO THIS IS TEMPORARY (HOPEFULLY) FIXED:CLEAR CACHE: SELECT ALL TABS OF YOUR SITE AND CTRL+F5-->
+        <h2 class="blogpostsmalltitle">Damen Naval (Vlissingen)</h2>
+        <img class="blogimg" src="./images/damennaval.png" alt="Logo of Damen Naval">
+        <p class="blogpostparagraph">Damen Naval primarily produces naval vessels for a lot of different sectors, a few of which are: Offshore Energy, Harbours, Public Transport, 
+          Defence & Security, Fishing, Yachting. They have been the dedicated shipbuilder for the Royal Netherlands Navy for over 50 years. Apart from building ships, they also repair 
+          or dismantle (broken/ old) ships. Aside from the 4 departments that directly have to do with building/ repairing/ demolishing the ships (Production, Project Management, 
+          Repair & Services and "Supply Chain") there are 8 more departments, one of which is IT (& IM). Some of the roles in the IT department are: "Senior Extended Reality (xR) 
+          Developer" (build serious games/ simulations in virtual reality and/ or augmented reality to help train customers), Cyber Security Engineer (F126) (keep their designs secret 
+          on the internet) and IT Project Manager (manages the IT employees working on projects). Other roles are: Manager ICT, Vendor Manager, Operational Purchaser (IT), Master Data 
+          Maintainer, IT Business Partner, Contract Manager (IT), SharePoint Dev (Ops) Engineer, IT Project Support Officer, IT Project Manager, DevOps Engineer ERP / SAP, Chapter Lead 
+          IT Transformation, IT Application Manager RUN. You can see there's quite a lot of roles in the IT department, which means they work with a lot of IT technologies, which 
+          include, but are not limited to: Unity, C#, Python, Blender, API, Virtual Reality, Augmented Reality, 3D Rendering Programs, ERP (IFS, SAP or similar) and/or information 
+          systems such as PIM and MDM, Microsoft 365, the Power Platform, Agile/ Scrum, PMBOK and/or Prince2, Waterfall, SAP Administration or SAP Consulting, ABAP and Fiori, 
+          integration best practices, ADO Fundamentals, MSP, SAFe, ADKAR. Working (with) these roles are some of the 12000 employees of Damen Naval, spread around 37 dockyard across 
+          the world. Damen Naval is active (sell ships) in around 101 countries. They describe their work culture as being focused around technology and innovation, but also as quite 
+          dynamiuc, diverse and rewarding. Employees have the opportunity to continue learning and developing their skills while working at the company. Social events centered around
+          business, culture and sports are hosted regularly.
+        </p>
+        <br>
         <div class="blogreview">
           <img class="blogplus" src="./images/plus.png" alt="A Green Plus">
           <p class="plusminustext">A big amount of different IT roles, so you have a wide variety to pick from.</p>
@@ -100,35 +104,35 @@
           <img class="blogminus" src="./images/minus.png" alt="A Red Minus">
           <p class="plusminustext">Their IT roles mostly seem like they're meant for more senior developers, not "junior" ones that just graduated from for example HBO.</p>
         </div>
-    </article>
-    <article class="blogpostdiv"> <!--TODO: MAKE THIS NOT INLINE: CLASSES DIDN'T WORK SO THIS IS TEMPORARY (HOPEFULLY) FIXED:CLEAR CACHE: SELECT ALL TABS OF YOUR SITE AND CTRL+F5-->
-      <h2 class="blogpostsmalltitle">Microsoft</h2>
-      <img class="blogimg" src="./images/microsoft.png" alt="Logo of Microsoft">
-      <p class="blogpostparagraph">Everyone knows Microsoft of course. Things they've been working on are: operating systems (Windows), hardware (Xbox, Windows phones) and software 
-        (Search Engines/ Browsers (Internet Explorer, Edge, Bing), Microsoft 365, Microsoft Office, Programs like word, excel, powerpoint, Onedrive, Skype, Xbox, AI, Programs for 
-        developers: .NET, Visual Studio, Microsoft Azure). Two interesting WIP ("Work In Progress") projects are AI and Quantum Computing. Just like (/because) or their wide variety
-        of products, they also have a wide variety of IT roles. Roles that have to do with securing their products agains hackers/ cheaters (in games): "Security Operations Engineer, 
-        Director of Gaming Sucerity, Principal SRE Manager (of the "Digital Security and Resiliency" department). Roles that have to do with creating software: "Software Engineer, 
-        Principal Software Program Manager". Roles that have to do with creating hardware: "Principal Hardware Engineer, Senior Quantum Engineer (Quantum Computers)". Other roles are: 
-        "Technical Support Engineering, Data Center Technician". Just like Damen Naval, because of their wide (in Microsoft's case probably even wider) variety of roles, they use a
-        lot of different technologies/ development environments, too many to really tell you about. I will tell you the things Microsoft includes in their technology stack though. 
-        What even is a technology stack I hear you ask, well: “A tech(nology) stack is the combination of technologies a company uses to build and run an application or project.”.
-        Microsoft's technology stack is: Net Framework, ASP.Net MVC, Dot Net Core, .Net 5 , .Net 6, SQL Server, Visual Studio, Visual Studio Code, Windows Azure, Microsoft Office, 
-        Sharepoint, Microsoft Silverlight, Windows OS, Xbox, Windows Communication Foundation (WCF), Microsoft Dynamics CRM, WinJs, Git Virtual File System (GVFS), 
-        Xamarin - For Mobile App Development, vb.net, ASP.NET Web Forms, Microsoft Win Forms / Microsoft Windows Forms, ASP.NET Web API Framework. As for Microsoft’s work culture, it 
-        can be summarised in a few words: Empathy, Growth mindset, Collaboration, Diversity & Inclusion, Customer-oriented. To achieve this, they treat employees with the respect they 
-        deserve, embrace teamwork, align the company’s goals with the personal goals of the employees, diversify the employees, arrange flexible work conditions (part-time, 
-        job-sharing, telecommuting), make employees be able to grow and develop their skills, be open to the ideas of employees, take risks and learn from possible mistakes, be 
-        innovating, build on the ideas of others and collaborate across boundaries.
-      </p>
+      </article>
+      <article class="blogpostdiv"> <!--TODO: MAKE THIS NOT INLINE: CLASSES DIDN'T WORK SO THIS IS TEMPORARY (HOPEFULLY) FIXED:CLEAR CACHE: SELECT ALL TABS OF YOUR SITE AND CTRL+F5-->
+        <h2 class="blogpostsmalltitle">Microsoft</h2>
+        <img class="blogimg" src="./images/microsoft.png" alt="Logo of Microsoft">
+        <p class="blogpostparagraph">Everyone knows Microsoft of course. Things they've been working on are: operating systems (Windows), hardware (Xbox, Windows phones) and software 
+          (Search Engines/ Browsers (Internet Explorer, Edge, Bing), Microsoft 365, Microsoft Office, Programs like word, excel, powerpoint, Onedrive, Skype, Xbox, AI, Programs for 
+          developers: .NET, Visual Studio, Microsoft Azure). Two interesting WIP ("Work In Progress") projects are AI and Quantum Computing. Just like (/because) or their wide variety
+          of products, they also have a wide variety of IT roles. Roles that have to do with securing their products agains hackers/ cheaters (in games): "Security Operations Engineer, 
+          Director of Gaming Sucerity, Principal SRE Manager (of the "Digital Security and Resiliency" department). Roles that have to do with creating software: "Software Engineer, 
+          Principal Software Program Manager". Roles that have to do with creating hardware: "Principal Hardware Engineer, Senior Quantum Engineer (Quantum Computers)". Other roles are: 
+          "Technical Support Engineering, Data Center Technician". Just like Damen Naval, because of their wide (in Microsoft's case probably even wider) variety of roles, they use a
+          lot of different technologies/ development environments, too many to really tell you about. I will tell you the things Microsoft includes in their technology stack though. 
+          What even is a technology stack I hear you ask, well: “A tech(nology) stack is the combination of technologies a company uses to build and run an application or project.”.
+          Microsoft's technology stack is: Net Framework, ASP.Net MVC, Dot Net Core, .Net 5 , .Net 6, SQL Server, Visual Studio, Visual Studio Code, Windows Azure, Microsoft Office, 
+          Sharepoint, Microsoft Silverlight, Windows OS, Xbox, Windows Communication Foundation (WCF), Microsoft Dynamics CRM, WinJs, Git Virtual File System (GVFS), 
+          Xamarin - For Mobile App Development, vb.net, ASP.NET Web Forms, Microsoft Win Forms / Microsoft Windows Forms, ASP.NET Web API Framework. As for Microsoft’s work culture, it 
+          can be summarised in a few words: Empathy, Growth mindset, Collaboration, Diversity & Inclusion, Customer-oriented. To achieve this, they treat employees with the respect they 
+          deserve, embrace teamwork, align the company’s goals with the personal goals of the employees, diversify the employees, arrange flexible work conditions (part-time, 
+          job-sharing, telecommuting), make employees be able to grow and develop their skills, be open to the ideas of employees, take risks and learn from possible mistakes, be 
+          innovating, build on the ideas of others and collaborate across boundaries.
+        </p>
+        <br>
         <div class="blogreview">
           <img class="blogplus" src="./images/plus.png" alt="A Green Plus">
           <p class="plusminustext">A even bigger amount of different IT roles (than Damen Naval)</p>
         </div>
         <div class="blogreview">
           <img class="blogplus" src="./images/plus.png" alt="A Green Plus">
-          <p class="plusminustext">A focus on diversity and teamwork, which means you’ll be meeting a lot of people from different backgrounds, which will make you more open-minded 
-            and worldwise.
+          <p class="plusminustext">A focus on diversity and teamwork, which means you’ll be meeting a lot of people from and worldwise.
           </p>
         </div>
         <div class="blogreview">
@@ -141,25 +145,59 @@
             mistakes) and might not want more junior developers, though from what I've seen they do have internships.
           </p>
         </div>
-    </article>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Sources</h2>
-      <p class="sourcelinkstitle">E-health Ventures Group</p>
-      <a class="normallinknoinline" target="_blank" href="https://www.haystackpeople.nl/vacatures/vacature-php-developer-e-health-breda-246258-11.html">https://www.haystackpeople.nl/vacatures/vacature-php-developer-e-health-breda-246258-11.html</a>
-      <a class="normallinknoinline" target="_blank" href="https://ehealthventuresgroup.com/?lang=en">https://ehealthventuresgroup.com/?lang=en</a>
-      <p class="sourcelinkstitle">Damen Naval (Vlissingen)</p>
-      <a class="normallinknoinline" target="_blank" href="https://www.damen.com/">https://www.damen.com/</a>
-      <a class="normallinknoinline" target="_blank" href="https://career.damen.com/">https://career.damen.com/</a>
-      <a class="normallinknoinline" target="_blank" href="https://career.damen.com/team-it-im/">https://career.damen.com/team-it-im/</a>
-      <p class="sourcelinkstitle">Microsoft</p>
-      <a class="normallinknoinline" target="_blank" href="https://www.microsoft.com/nl-nl/sitemap.aspx">https://www.microsoft.com/nl-nl/sitemap.aspx</a>
-      <a class="normallinknoinline" target="_blank" href="https://careers.microsoft.com/us/en">https://careers.microsoft.com/us/en</a>
-      <a class="normallinknoinline" target="_blank" href="https://careers.microsoft.com/professionals/us/en/professions">https://careers.microsoft.com/professionals/us/en/professions</a>
-      <a class="normallinknoinline" target="_blank" href="https://careers.microsoft.com/us/en/culture">https://careers.microsoft.com/us/en/culture</a>
-      <a class="normallinknoinline" target="_blank" href="https://blog.grovehr.com/microsoft-company-culture">https://blog.grovehr.com/microsoft-company-culture</a>
-      <a class="normallinknoinline" target="_blank" href="Microsoft - Wikipedia">Microsoft - Wikipedia</a>
-      <a class="normallinknoinline" target="_blank" href="https://heap.io/topics/what-is-a-tech-stack">https://heap.io/topics/what-is-a-tech-stack</a>
-      <a class="normallinknoinlinebottom" target="_blank" href="Microsoft Technologies Stack | A - Z ">Microsoft Technologies Stack | A - Z </a>
-    </article>
+      </article>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Sources</h2>
+        <p class="sourcelinkstitle">E-health Ventures Group</p>
+        <a class="normallinknoinline" target="_blank" href="https://www.haystackpeople.nl/vacatures/vacature-php-developer-e-health-breda-246258-11.html">
+          https://www.haystackpeople.nl/vacatures/vacature-php-developer-e-health-breda-246258-11.html</a>
+        <a class="normallinknoinline" target="_blank" href="https://ehealthventuresgroup.com/?lang=en">https://ehealthventuresgroup.com/?lang=en</a>
+        <p class="sourcelinkstitle">Damen Naval (Vlissingen)</p>
+        <a class="normallinknoinline" target="_blank" href="https://www.damen.com/">https://www.damen.com/</a>
+        <a class="normallinknoinline" target="_blank" href="https://career.damen.com/">https://career.damen.com/</a>
+        <a class="normallinknoinline" target="_blank" href="https://career.damen.com/team-it-im/">https://career.damen.com/team-it-im/</a>
+        <p class="sourcelinkstitle">Microsoft</p>
+        <a class="normallinknoinline" target="_blank" href="https://www.microsoft.com/nl-nl/sitemap.aspx">https://www.microsoft.com/nl-nl/sitemap.aspx</a>
+        <a class="normallinknoinline" target="_blank" href="https://careers.microsoft.com/us/en">https://careers.microsoft.com/us/en</a>
+        <a class="normallinknoinline" target="_blank" href="https://careers.microsoft.com/professionals/us/en/professions">
+          https://careers.microsoft.com/professionals/us/en/professions</a>
+        <a class="normallinknoinline" target="_blank" href="https://careers.microsoft.com/us/en/culture">https://careers.microsoft.com/us/en/culture</a>
+        <a class="normallinknoinline" target="_blank" href="https://blog.grovehr.com/microsoft-company-culture">https://blog.grovehr.com/microsoft-company-culture</a>
+        <a class="normallinknoinline" target="_blank" href="Microsoft - Wikipedia">Microsoft - Wikipedia</a>
+        <a class="normallinknoinline" target="_blank" href="https://heap.io/topics/what-is-a-tech-stack">https://heap.io/topics/what-is-a-tech-stack</a>
+        <a class="normallinknoinlinebottom" target="_blank" href="Microsoft Technologies Stack | A - Z ">Microsoft Technologies Stack | A - Z </a>
+      </article>
+    </main>
+    <script>
+      window.onload = function() {
+        dropdownContent.style.display = "none";
+      }
+      const dropdown = document.getElementById("dropdown");
+      const dropdownbutton = document.getElementById("dropdownbutton");
+	    const dropdownContent = document.getElementById("dropdown-content");
+      const blog5Link = document.getElementById("blog5link");
+      const blog4Link = document.getElementById("blog4link");
+      const blog3Link = document.getElementById("blog3link");
+      const blog2Link = document.getElementById("blog2link");
+      const blog1Link = document.getElementById("blog1link");
+
+      function fadeIn() {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "topfade-in 250ms linear 1 forwards";
+      }
+      function fadeOut() {
+        if (
+        window.getComputedStyle(blog5link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog4link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog3link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog2link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog1link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(dropdown).backgroundColor == "rgb(17, 17, 17)") {
+        } else {
+          dropdownContent.style.animation = "topfade-out 250ms linear 1 forwards";
+          setTimeout( function() {dropdownContent.style.display = "none";}, 250);
+        }
+      }
+    </script>
   </body>
 </html>

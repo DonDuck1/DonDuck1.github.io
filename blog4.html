@@ -15,15 +15,15 @@
         <li class="nav_bar_2"><a href="./profile.html">Profile</a></li>
         <li class="nav_bar_2"><a href="./faq.html">FAQ</a></li>
         <li class="nav_bar_2"><a href="./dashboard.html">Dashboard</a></li>
-        <li class="dropdown" id="active">
-        <a href="./blog.html" class="dropbtn">Blogs</a>
-        <div class="dropdown-content">
-          <a href="./blog5.html">First feedback</a>
-          <a href="./blog4.html">Programming experience</a>
-          <a href="./blog3.html">Personal SWOT analysis</a>
-          <a href="./blog2.html">Study Choice</a>
-          <a href="./blog1.html">Profession</a>
-        </div>
+        <li class="dropdown" id="dropdown" id="active">
+          <a href="./blog.html" class="dropbtn" id="dropdownbutton" onmouseover="fadeIn()" onmouseout="fadeOut()">Blogs</a>
+          <div class="dropdown-content" id="dropdown-content" onmouseout="fadeOut()">
+            <a href="./blog5.html" id="blog5link">First feedback</a>
+            <a href="./blog4.html" id="blog4link">Programming experience</a>
+            <a href="./blog3.html" id="blog3link">Personal SWOT analysis</a>
+            <a href="./blog2.html" id="blog2link">Study Choice</a>
+            <a href="./blog1.html" id="blog1link">Profession</a>
+          </div>
         </li>
       </ul>
       <div class="popup">
@@ -41,26 +41,60 @@
           <li><a  href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub of study program</a></li>
         </ul>
       </div>
-      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" alt="A tried and failed animation fix (if you read this)"></div>
+      <div class="animationfixdiv" id="animationfixdivjs"><img class="animationfix" id="animationfixjs" src="./images/animationfix.png" 
+        alt="A tried and failed animation fix (if you are reading this)"></div>
     </nav>
-    <header><h1 class="big_title">Programming experience</h1></header>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Programming experience prior to study</h2>
-      <img class="blogimg" src="./images/heartsofiron4.jpg" alt="Hearts of iron 4">
-      <p class="blogpostparagraph">The only prior experience I had with programming that I didn’t give up/ forgot after 2 days is modding games, to be more specific modding the game 
-        “Hearts of Iron IV”. I started doing this in the summer vacation, partly to prepare for the study “HBO-ICT” (to gain just a little bit of experience in programming).
-      </p>
-    </article>
-    <article class="blogpostdiv">
-      <h2 class="blogpostsmalltitle">Hearts of iron 4 modding</h2>
-      <img class="blogimg" src="./images/x10beta.png" alt="Thumbnail of my mod">
-      <p class="blogpostparagraph">The first 2 mods I made were small and very specific, having influence on everything in the game without any selectors. The next 2 mods were bug 
-        fixes of bugs in the base game. I encountered those bugs working on my biggest mod, namely a mod that multiplies all modifiers in the game by 10. This wasn’t an original idea:
-        there were multiple other mods that did the same thing (multiply by 10, multiply by 1000), but those were all outdated and not compatible with the most recent version of the 
-        game. I enjoyed playing those mods when they were still compatible, so I took it upon myself to make an updated version. Right now I’m about 95% done with it, only the 
-        “events” (popups with effects/ information) need to be done, but I’ve stopped working on it for quite a while because of school/ spending my free time on other things. I kept 
-        a log on the amount of time I spent working on it, which currently totals out at around 120 hours.
-      </p>
-    </article>
+    <main>
+      <header><h1 class="big_title">Programming experience</h1></header>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Programming experience prior to study</h2>
+        <img class="blogimg" src="./images/heartsofiron4.jpg" alt="Hearts of iron 4">
+        <p class="blogpostparagraph">The only prior experience I had with programming that I didn’t give up/ forgot after 2 days is modding games, to be more specific modding the game 
+          “Hearts of Iron IV”. I started doing this in the summer vacation, partly to prepare for the study “HBO-ICT” (to gain just a little bit of experience in programming).
+        </p>
+      </article>
+      <article class="blogpostdiv">
+        <h2 class="blogpostsmalltitle">Hearts of iron 4 modding</h2>
+        <img class="blogimg" src="./images/x10beta.png" alt="Thumbnail of my mod">
+        <p class="blogpostparagraph">The first 2 mods I made were small and very specific, having influence on everything in the game without any selectors. The next 2 mods were bug 
+          fixes of bugs in the base game. I encountered those bugs working on my biggest mod, namely a mod that multiplies all modifiers in the game by 10. This wasn’t an original 
+          idea: there were multiple other mods that did the same thing (multiply by 10, multiply by 1000), but those were all outdated and not compatible with the most recent version 
+          of the game. I enjoyed playing those mods when they were still compatible, so I took it upon myself to make an updated version. Right now I’m about 95% done with it, only the 
+          “events” (popups with effects/ information) need to be done, but I’ve stopped working on it for quite a while because of school/ spending my free time on other things. I kept 
+          a log on the amount of time I spent working on it, which currently totals out at around 120 hours.
+        </p>
+      </article>
+    </main>
+    <script>
+      window.onload = function() {
+        dropdownContent.style.display = "none";
+      }
+      const dropdown = document.getElementById("dropdown");
+      const dropdownbutton = document.getElementById("dropdownbutton");
+	    const dropdownContent = document.getElementById("dropdown-content");
+      const blog5Link = document.getElementById("blog5link");
+      const blog4Link = document.getElementById("blog4link");
+      const blog3Link = document.getElementById("blog3link");
+      const blog2Link = document.getElementById("blog2link");
+      const blog1Link = document.getElementById("blog1link");
+
+      function fadeIn() {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "topfade-in 250ms linear 1 forwards";
+      }
+      function fadeOut() {
+        if (
+        window.getComputedStyle(blog5link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog4link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog3link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog2link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(blog1link).backgroundColor == "rgb(17, 17, 17)" ||
+        window.getComputedStyle(dropdown).backgroundColor == "rgb(17, 17, 17)") {
+        } else {
+          dropdownContent.style.animation = "topfade-out 250ms linear 1 forwards";
+          setTimeout( function() {dropdownContent.style.display = "none";}, 250);
+        }
+      }
+    </script>
   </body>
 </html>
