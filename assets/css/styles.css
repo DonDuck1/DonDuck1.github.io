@@ -416,14 +416,14 @@
 	/*display: inline-block;*/
 	float: left;
 	width: 40%;
-	height: 100%;
+	height: 200px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
 
 .titledivblog {
 	width: 100%;
-	height: 25%;
+	height: 50px;
 	border-top: 0px;
 	border-bottom: 1px solid black;
 	border-left: 0px;
@@ -434,7 +434,6 @@
 .smalltitleblog {
 	text-align: left;
 	display: block;
-	height: 25%;
 	margin-left: 6px;
 	margin-right: 0;
 	margin-top: 0;
@@ -446,7 +445,7 @@
 .summarydivblog {
 	position: relative;
 	width: 100%;
-	min-height: 74.6%;
+	min-height: 149px;
 	border-right: 1px solid black;
 	border-bottom-left-radius: 20px;
 }
@@ -474,7 +473,7 @@
 	left: 0;
 	margin-top: 0px;
 	margin-right: 0px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	margin-left: 8px;
 }
 
@@ -485,7 +484,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 57%;
-	height: 100%;
+	height: 200px;
 	border-top: 0px;
 	border-bottom: 0px;
 	/*border-left: 1px solid black;*/
