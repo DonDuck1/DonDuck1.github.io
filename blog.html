@@ -108,7 +108,7 @@
         </div>
         <div class="imagedivblog" id="imagedivblog3">
           <div class="bloghome1imgsubdiv">
-            <img class="bloghomeimg" src="./images/swot.png" alt="Drawing of SWOT idea">
+            <img id="swotimage" class="bloghomeimg" src="./images/swot.png" alt="Drawing of SWOT idea">
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
         </div>
         <div class="imagedivblog" id="imagedivblog2">
           <div class="bloghome1imgsubdiv">
-            <img class="bloghomeimg" src="./images/hzhighquality.png" alt="HZ-logo">
+            <img id="hzimage" class="bloghomeimg" src="./images/hzhighquality.png" alt="HZ-logo">
           </div>
         </div>
       </div>
@@ -188,8 +188,26 @@
           setTimeout( function() {dropdownContent.style.display = "none";}, 250);
         }
       }
+
       window.onload = function() {
-        dropdownContent.style.display = "none";
+      dropdownContent.style.display = "none";
+
+      let imageDivBlog5Width = window.getComputedStyle(document.getElementById("imagedivblog5")).width;
+      imageDivBlog5Width = imageDivBlog5Width.replace('px','');
+      if (imageDivBlog5Width < 225) {
+        document.getElementById("imagedivblog5").style.flexWrap = "wrap";
+        document.getElementById("imagedivblog4").style.flexWrap = "wrap";
+        document.getElementById("imagedivblog3").style.flexWrap = "wrap";
+        document.getElementById("imagedivblog2").style.flexWrap = "wrap";
+        document.getElementById("imagedivblog1").style.flexWrap = "wrap";
+
+        document.getElementById("swotimage").setAttribute("src", "./images/swotvertical.png");
+        document.getElementById("swotimage").style.marginLeft = "auto";
+        document.getElementById("swotimage").style.marginRight = "auto";
+        document.getElementById("hzimage").setAttribute("src", "./images/hzhighqualityvertical.png");
+        document.getElementById("hzimage").style.marginLeft = "auto";
+        document.getElementById("hzimage").style.marginRight = "auto";
+      }
 
         function heightCheckBlog5 () {
         let smallTitleBlog5WidthVar = window.getComputedStyle(document.getElementById("smalltitleblog5")).width;
@@ -240,8 +258,10 @@
       function heightCheckBlog4 () {
         let smallTitleBlog4WidthVar = window.getComputedStyle(document.getElementById("smalltitleblog4")).width;
         smallTitleBlog4WidthVar = smallTitleBlog4WidthVar.replace('px','')
-        if (smallTitleBlog4WidthVar < 135) {
+        if (smallTitleBlog4WidthVar < 112) {
           document.getElementById("smalltitleblog4").innerHTML = "Prog- ram- ming Expe- rie- nce"
+        } else if (smallTitleBlog4WidthVar < 147) {
+          document.getElementById("smalltitleblog4").innerHTML = "Prog- ram- ming Expe- rience"
         } else if (smallTitleBlog4WidthVar < 170) {
           document.getElementById("smalltitleblog4").innerHTML = "Prog- ram- ming Experie- nce"
         } else if (smallTitleBlog4WidthVar < 205) {
@@ -437,6 +457,8 @@
       }
       heightCheckBlog1()
       }
+
+      
     </script>
   </body>
 </html>
