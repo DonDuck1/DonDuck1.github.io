@@ -18,3 +18,9 @@ function imgremoval4() {
 	var imgremove4 = document.getElementById("animationfixdivjs");
 	imgremove4.classList.add("animationfixdivnodisplay");
 }
+
+setTimeout(function () { animationSpeedFix(); }, 250);
+function animationSpeedFix() {
+	var animationSpeedFixVar = document.getElementById("nav_bar_3");
+	animationSpeedFixVar.style.animationDuration = "250ms";
+}

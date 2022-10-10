@@ -819,7 +819,7 @@
 	right: 0;
 	border-bottom-left-radius: 20px;
 	border-top-left-radius: 20px;
-	animation: popupdeflation 250ms linear 1 forwards;
+	animation: popupdeflation 0ms linear 1 forwards;
 }
 
 @keyframes popupdeflation {
@@ -865,7 +865,8 @@
 	position: fixed;
 	top: 12.5%;
 	right: 0;
-	background-color: #adc0dd;
+	background-color: transparent;
+	/*background-color: #adc0dd;*/
 }
 
 .animationfixdivnodisplay {
@@ -884,7 +885,6 @@
 
 .animationfixnodisplay {
 	display: none;
-
 }
 
 @keyframes animationfix {
